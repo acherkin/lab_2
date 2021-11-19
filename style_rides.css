@@ -9,10 +9,10 @@ header {
 video {
     /* add your style definitions here */
     border: brown;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
-    border-radius: 5px;
-    padding: 30px;
+    border-radius: 10px;
+    padding: 15px;
     /* transitions applied to the video element */
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
@@ -23,6 +23,7 @@ video {
 
 audio{
     border:cadetblue;
+    border-radius: 5px;
     margin-bottom: 4px;
     margin-top: 20 px;
 }
