@@ -95,21 +95,8 @@ h1{
         margin-top: 20 px;
     }
     
-    button.back{
-        /*These lines override the previous styling of buttons*/
-       border-image: url("greyButton.png");
-       background: url("greyButton.png");
-       background-size: cover;
-       width:60px;
-       height: 30px;
-        
-       /*These lines position the back button inside the header*/
-       position:absolute;
-       left:16px;
-       top:8px; }
 
-
-       button {
+    button {
         /*center the button*/
        display: block;
        margin-left: auto;
@@ -126,5 +113,19 @@ h1{
        /*set width and height for the button*/
        width: 50px;
        height: 30px;
-       }
+    }
+
+    button.back{
+        /*These lines override the previous styling of buttons*/
+       border-image: url("greyButton.png");
+       background: url("greyButton.png");
+       background-size: cover;
+       width:60px;
+       height: 30px;
+        
+       /*These lines position the back button inside the header*/
+       position:absolute;
+       left:16px;
+       top:8px; }
+
        
