@@ -8,6 +8,12 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title> BIKE WPI </title>
+    <script>
+        var bikeArr=new Array("Bike.jpg","bike1.jpg","Bike2.jpg","Bike3.jpg","Bike4.jpg");
+    </script>
+
+
+
 </head>
 
 <body>   
@@ -18,7 +24,7 @@
         onClick = "alert('welcome!');">Alert </button>
         <button id="promptButton" onClick = "promptButtonClicked();">Prompt</button>
         <button id="confirmationButton" onClick = "confirmButtonClicked();">Confirm</button>
-        <button id="changeButton">Change bike</button> 	
+        <button id="changeButton" onClick = "changeButtonClicked();">Change bike</button> 	
     </div> 	
     <div id="content"> 	  
         <img id="bikeImg" src="">
@@ -61,7 +67,16 @@
 		        /*retrieve the <div> element with id= “content” and add to it the new <p> element*/
                     var ul=document.getElementById("content");
                 ul.appendChild(p); } 
-	    }                   	        	
+                }
+                
+            function changeButtonClicked(){
+                var num = Math.floor(Math.random()*bikeArr.length);
+                var img=document.getElementById("bikeImg");
+		        img.src=bikeArr[num];
+
+                var ul=document.getElementById("content");
+                ul.appendChild(p);
+            }
 
     </script>
     </body>
