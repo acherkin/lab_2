@@ -11,20 +11,6 @@
 </head>
 
 <body>   
-    <header class="secondary"> Reserve your bike</header>
-    <button class="back" onClick="location.href='index.html';">Back</button>
-    <div id="buttons">
-        <button id="alertButton" 
-        onClick = "alert('welcome!');">Alert </button>
-        <button id="promptButton" oclick = "promptButtonClicked();">Prompt</button>
-        <button id="confirmationButton">Confirm</button>
-        <button id="changeButton">Change bike</button> 	
-    </div> 	
-    <div id="content"> 	  
-        <img id="bikeImg" src="">
-        <p id="choicelist">   	
-        <ul id="orderedBike"> </ul>    
-    </div>
     <script>
         function promptButtonClicked() {     	
             /*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
@@ -43,6 +29,20 @@
                 ul.appendChild(li); } 	
             }     
         </script>
+    <header class="secondary"> Reserve your bike</header>
+    <button class="back" onClick="location.href='index.html';">Back</button>
+    <div id="buttons">
+        <button id="alertButton" 
+        onClick = "alert('welcome!');">Alert </button>
+        <button id="promptButton" oclick = "promptButtonClicked();">Prompt</button>
+        <button id="confirmationButton">Confirm</button>
+        <button id="changeButton">Change bike</button> 	
+    </div> 	
+    <div id="content"> 	  
+        <img id="bikeImg" src="">
+        <p id="choicelist">   	
+        <ul id="orderedBike"> </ul>    
+    </div>
     </body>
     
 </html>
