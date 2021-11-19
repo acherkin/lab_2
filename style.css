@@ -96,7 +96,7 @@ h1{
     }
     
 
-    button {
+    button.alertButton {
         /*center the button*/
        display: block;
        margin-left: auto;
@@ -114,6 +114,8 @@ h1{
        width: 50px;
        height: 30px;
     }
+
+    
 
     button.back{
         /*These lines override the previous styling of buttons*/
