@@ -43,25 +43,6 @@
                 ul.appendChild(li); } 	
             }     
         
-        function confirmButtonClicked() {  
-	        /*Confirm displays a message and returns true if OK is clicked and a false if Cancel is clicked. 	You might use this for simple input */  
-	        var bool=confirm("Are you sure?");
-
-	        /*if the user clicked ok execute the following*/
-	        if(bool==true){
-
-		        //retrieve the <img> object from the DOM and set its src attribute
-		        var img=document.getElementById("bikeImg");
-		        img.src="bike1.jpg";
-
-		        //create a new <p> element and set its content
-		        var p=document.createElement("p");   	
-		        p.innerHTML="You are bike ready!";
-
-		        /*retrieve the <div> element with id= “content” and add to it the new <p> element*/
-                    var ul=document.getElementById("content");
-                ul.appendChild(p); } 
-	    }
     	                    	        	
 
     </script>
