@@ -69,3 +69,65 @@ h1{
       }
       
     
+      header.secondary{   
+        padding-left: 75px;
+    }
+        
+    video {
+        /* add your style definitions here */
+        border: brown;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        padding-left: 100px;
+        /* transitions applied to the video element */
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    
+    audio{
+        border:cadetblue;
+        border-radius: 5px;
+        margin-bottom: 4px;
+        margin-top: 20 px;
+    }
+    
+
+    button{
+        /*center the button*/
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+        
+       /* add your code to set top and bottom margins */
+        margin-top: 20px;
+        margin-bottom: 20px;
+       /*add an image to your button*/
+       border-image: url("orangeButton.png");
+       background: url("orangeButton.png");
+       background-size: cover;
+       
+       /*set width and height for the button*/
+       width: 50px;
+       height: 30px;
+    }
+
+    
+
+    button.back{
+        /*These lines override the previous styling of buttons*/
+       border-image: url("greyButton.png");
+       background: url("greyButton.png");
+       background-size: cover;
+       width:60px;
+       height: 30px;
+        
+       /*These lines position the back button inside the header*/
+       position:absolute;
+       left:16px;
+       top:8px; }
+
+       
