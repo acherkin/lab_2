@@ -96,7 +96,7 @@ h1{
     }
     
 
-    button.alertButton {
+    button{
         /*center the button*/
        display: block;
        margin-left: auto;
