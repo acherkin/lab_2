@@ -16,7 +16,7 @@
     <div id="buttons">
         <button id="alertButton" 
         onClick = "alert('welcome!');">Alert </button>
-        <button id="promptButton">Prompt</button>
+        <button id="promptButton" oclick = "promptButtonClicked();">Prompt</button>
         <button id="confirmationButton">Confirm</button>
         <button id="changeButton">Change bike</button> 	
     </div> 	
@@ -25,6 +25,24 @@
         <p id="choicelist">   	
         <ul id="orderedBike"> </ul>    
     </div>
+    <script>
+        function promptButtonClicked() {     	
+            /*Prompt displays a message and returns a string depending on what the user has entered. It can be used for simple input. We stored the returned string in a variable.*/  
+            var destination=prompt("Where would you like to ride?");
+            //if the user entered a non-empty string executes the following
+            if(destination!=""){
+                /*retrieve the element named choicelist from the DOM*/  
+                var p=document.getElementById("choicelist");
+                /*set its innerHTML attribute*/ 	
+                p.innerHTML="Here is a summary of your choices";  
+                /*create a brand new element and sets its innerHTML value. Note that it is not yet inserted in the DOM.*/
+                 var li=document.createElement("li"); 	
+                li.innerHTML=destination;
+                /*Retrieve an element from the DOM. We then add our new element as a child to this element.*/
+                    var ul=document.getElementById("orderedBike");
+                ul.appendChild(li); } 	
+            }     
+        </script>
     </body>
     
 </html>
