@@ -107,3 +107,24 @@ h1{
        position:absolute;
        left:16px;
        top:8px; }
+
+
+       button {
+        /*center the button*/
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+        
+       /* add your code to set top and bottom margins */
+        margin-top: 20px;
+        margin-bottom: 20px;
+       /*add an image to your button*/
+       border-image: url("orangeButton.png");
+       background: url("orangeButton.png");
+       background-size: cover;
+       
+       /*set width and height for the button*/
+       width: 50px;
+       height: 30px;
+       }
+       
